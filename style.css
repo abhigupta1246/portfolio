@@ -478,7 +478,8 @@ ul li {
     display: flex;
     position: absolute;
     right: 24px;
-    top: 18px;
+    top: 50%;
+    transform: translateY(-50%);
     z-index: 1001;
     font-size: 26px;
     color: #fff;
