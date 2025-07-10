@@ -68,4 +68,35 @@ const revealOnScroll = () => {
 };
 window.addEventListener('scroll', revealOnScroll);
 window.addEventListener('load', revealOnScroll);
+
+// Certificate Modal
+const modal = document.getElementById('certificateModal');
+const viewCertificateBtn = document.getElementById('viewCertificate');
+const closeBtn = document.querySelector('.close');
+
+viewCertificateBtn.addEventListener('click', function(e) {
+  e.preventDefault();
+  modal.style.display = 'block';
+  document.body.style.overflow = 'hidden'; // Prevent background scrolling
+});
+
+closeBtn.addEventListener('click', function() {
+  modal.style.display = 'none';
+  document.body.style.overflow = 'auto'; // Restore scrolling
+});
+
+window.addEventListener('click', function(e) {
+  if (e.target === modal) {
+    modal.style.display = 'none';
+    document.body.style.overflow = 'auto';
+  }
+});
+
+// Close modal with Escape key
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape' && modal.style.display === 'block') {
+    modal.style.display = 'none';
+    document.body.style.overflow = 'auto';
+  }
+});
   

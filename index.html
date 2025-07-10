@@ -22,6 +22,7 @@
         <ul class="nav-links">
           <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
           <li><a href="#education"><i class="fas fa-graduation-cap"></i> Education</a></li>
+          <li><a href="#experience"><i class="fas fa-briefcase"></i> Experience</a></li>
           <li><a href="#skills"><i class="fas fa-code"></i> Skills</a></li>
           <li><a href="#projects"><i class="fas fa-laptop-code"></i> Projects</a></li>
           <li><a href="#achievements"><i class="fas fa-trophy"></i> Achievements</a></li>
@@ -57,29 +58,54 @@
       </ul>
     </section>
 
+    <section id="experience" class="card section-reveal">
+      <h2><i class="fas fa-briefcase"></i> Experience</h2>
+      <div class="experience-item">
+        <h3><i class="fas fa-building"></i> Deloitte Australia (Forage Virtual Internship)</h3>
+        <p><strong>Duration:</strong> July 2025</p>
+        <p><strong>Tasks Completed:</strong> Real-time manufacturing dashboard simulation, machine health analytics, telemetry design, etc.</p>
+        <a href="#" class="btn project" id="viewCertificate"><i class="fas fa-certificate"></i> View Certificate</a>
+      </div>
+      <div class="experience-item">
+        <h3><i class="fas fa-code"></i> Bluestock Fintech Company, Pune, Maharashtra</h3>
+        <p><strong>Role:</strong> Software Developer Intern</p>
+        <p><strong>Duration:</strong> August 2025 (Completing on 31st August)</p>
+        <p><strong>Location:</strong> Pune, Maharashtra, India</p>
+      </div>
+    </section>
+
     <section id="skills" class="card section-reveal">
       <h2><i class="fas fa-tools"></i> Technical Skills</h2>
-      <h3 class="accent">Web Development</h3>
-      <div class="skill-list">
-        <i class="devicon-react-original colored" title="React.js">React.js</i>
-        <i class="devicon-redux-original colored" title="Redux Toolkit">Redux</i>
-        <i class="devicon-nodejs-plain colored" title="Node.js">Node.js</i>
-        <i class="fab fa-js" title="JavaScript">JavaScript</i>
-        <i class="fab fa-html5" title="HTML5">HTML5</i>
-        <i class="fab fa-css3-alt" title="CSS3">CSS3</i>
-        <i class="devicon-bootstrap-plain colored" title="Bootstrap">Bootstrap</i>
-        <i class="devicon-tailwindcss-plain colored" title="Tailwind CSS">Tailwind CSS</i>
+      
+      <div class="skill-category">
+        <h3 class="accent"><i class="fas fa-code"></i> Programming Languages</h3>
+        <div class="skill-list">
+          <i class="devicon-python-plain colored" title="Python">Python</i>
+          <i class="devicon-cplusplus-plain colored" title="C++">C++</i>
+          <i class="devicon-c-plain colored" title="C">C</i>
+          <i class="fab fa-js" title="JavaScript">JavaScript</i>
+        </div>
       </div>
-      <h3 class="accent">Tools & Technologies</h3>
-      <div class="skill-list">
-        <i class="devicon-git-plain colored" title="Git">Git</i>
-        <i class="devicon-github-original colored" title="GitHub">GitHub</i>
+
+      <div class="skill-category">
+        <h3 class="accent"><i class="fas fa-globe"></i> Web Development</h3>
+        <div class="skill-list">
+          <i class="fab fa-html5" title="HTML5">HTML5</i>
+          <i class="fab fa-css3-alt" title="CSS3">CSS3</i>
+          <i class="devicon-react-original colored" title="React.js">React.js</i>
+          <i class="devicon-redux-original colored" title="Redux Toolkit">Redux</i>
+          <i class="devicon-nodejs-plain colored" title="Node.js">Node.js</i>
+          <i class="devicon-bootstrap-plain colored" title="Bootstrap">Bootstrap</i>
+          <i class="devicon-tailwindcss-plain colored" title="Tailwind CSS">Tailwind CSS</i>
+        </div>
       </div>
-      <h3 class="accent">Programming Languages</h3>
-      <div class="skill-list">
-        <i class="devicon-python-plain colored" title="Python">Python</i>
-        <i class="devicon-cplusplus-plain colored" title="C++">++</i>
-        <i class="devicon-c-plain colored" title="C"></i>
+
+      <div class="skill-category">
+        <h3 class="accent"><i class="fas fa-cogs"></i> Tools & Technologies</h3>
+        <div class="skill-list">
+          <i class="devicon-git-plain colored" title="Git">Git</i>
+          <i class="devicon-github-original colored" title="GitHub">GitHub</i>
+        </div>
       </div>
     </section>
 
@@ -100,6 +126,11 @@
             <span style="color: #f39c12;">4-star</span> rating in 
             <span style="color: #2980b9;">Problem Solving</span> 
             (<span style="color: #5e97d0;">C</span> and <span style="color: #3572A5;">Python</span>)
+            <li>  <strong style="color: #2EC866;">leetcode</strong> — 
+              <span style="color: #444; font-style: italic; font-weight: 500;">
+                <span style="color: #f39c12;">100+</span> rating in 
+                <span style="color: #2980b9;">Problem Solved</span> 
+
           </span>
         </li>
       </ul>
@@ -127,6 +158,15 @@
   <footer class="footer glass">
     <p>&copy; 2025 Abhishek Gupta. All rights reserved.</p>
   </footer>
+
+  <!-- Certificate Modal -->
+  <div id="certificateModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h3>Deloitte Australia Certificate</h3>
+      <iframe src="assets/deloitte.pdf" width="100%" height="600px"></iframe>
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </body>
