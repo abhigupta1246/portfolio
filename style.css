@@ -311,9 +311,9 @@ ul li {
   flex-wrap: wrap;
   gap: 22px;
   margin-bottom: 0;
-  /* font-size: 2.2rem; */
+  font-size: 2.2rem;
   align-items: center;
-  font-size: smaller;
+ 
 }
 
 .skill-list i {
